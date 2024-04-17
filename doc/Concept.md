@@ -118,4 +118,4 @@ K3d дозволяє швидко створювати та видаляти л�
   
 ## Демонстрація
 #### Рекомендований інструмент: k3d. Demo розгортання додатку Hello World! за допомогою k3d.
-[![asciicast](https://asciinema.org/a/dm6CJajpG4cNpFHcb1R1hjEzY.svg)](https://asciinema.org/a/dm6CJajpG4cNpFHcb1R1hjEzY)
+[![Натисніть тут для перегляду demo](https://asciinema.org/a/dm6CJajpG4cNpFHcb1R1hjEzY.svg)](https://asciinema.org/a/dm6CJajpG4cNpFHcb1R1hjEzY)
