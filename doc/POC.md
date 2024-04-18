@@ -55,3 +55,5 @@ $ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.passwor
 Ми отримаємо закодований пароль base64. Використаємо команду `base64 -d` для отримання пароля у вигляді простого тексту.  
 ```bash
 $ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
+```  
+Створимо додаток за допомогою графічного інтерфейсу. Налащтовані в ArgoCD додатки тепер будуть автоматично встановлюватись та оновлюватись в Kebernetes.
