@@ -59,3 +59,5 @@ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}
 Створимо додаток за допомогою графічного інтерфейсу. Налащтовані в ArgoCD додатки тепер будуть автоматично встановлюватись та оновлюватись в Kebernetes.  
 ## Демонстрація
 [![asciicast](https://asciinema.org/a/L1a2RMtnIh5rwRSzq8QtqLgMs.svg)](https://asciinema.org/a/L1a2RMtnIh5rwRSzq8QtqLgMs)
+
+![youtube](https://youtu.be/6JQB5nEcwbg)
