@@ -60,4 +60,4 @@ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}
 ## Демонстрація
 [![asciicast](https://asciinema.org/a/L1a2RMtnIh5rwRSzq8QtqLgMs.svg)](https://asciinema.org/a/L1a2RMtnIh5rwRSzq8QtqLgMs)
 
-[![youtube]()](https://youtu.be/6JQB5nEcwbg)
+[![youtube](https://i9.ytimg.com/vi_webp/CBy6_0ZBbSw/mq1.webp?sqp=CJzXg7EG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEIgSChyMA8=&rs=AOn4CLB4A57GmSh04eS690k0WVQmsulylw)](https://youtu.be/CBy6_0ZBbSw)
