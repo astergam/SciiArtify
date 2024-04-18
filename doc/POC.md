@@ -43,4 +43,15 @@ $ k get all -n argocd
 ```bash
 $ k get pod -n argocd -w
 ```  
-Отримаємо доступ до інтерфейсу ArgoCD GUI.
+Отримаємо доступ до інтерфейсу ArgoCD GUI. Скористаємось port forwarding за допомогою локального порта 9090.  
+```bash
+$ k port-forward svc/argocd-server -n argocd 9090:443
+```  
+Так як ArgoCD працює з https то є необхідність встановлювати сертифікат та проводити певні налаштування.  
+При відвідуванні веб-інтерфейсу ArgoCD буде запрос на введення імені та паролю. За замовчуванням  ім'я користувача - "admin", а пароль отримаємо з секрету Kubernetes. Вкажемо файл секрету `argocd-initial-admin-secret`, а формат виводу `jsonpath="{.data.password}"`.  
+```bash
+$ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
+```  
+Ми отримаємо закодований пароль base64. Використаємо команду `base64 -d` для отримання пароля у вигляді простого тексту.  
+```bash
+$ k -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo
