@@ -11,3 +11,9 @@ ArgoCD обрано для системи Delivery і Deploy. ArgoCD - конт�
 ```bash
 $ k3d cluster create argo
 ```
+```bash
+$ alias k=kubectl
+```
+```bash
+k cluster-info
+```
